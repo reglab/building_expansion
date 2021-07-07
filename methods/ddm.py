@@ -39,7 +39,7 @@ def normalize(data, method='local', std=None, mean=None):
     
 
 def fit_observation(basis, test,
-                    normalization='local', reg=1,
+                    normalization='none', reg=1,
                     remove_outliers=True, max_outlier_iterations=5,
                     num_steps=1000, learning_rate=0.01):
     """
@@ -197,7 +197,7 @@ def hot_detect(gamma, basis, test, rmse, normalization='none', mean=None, std=No
         hot_map = tf.clip_by_value(hot_map, clip_value_min=0, clip_value_max=1e6)
 
     if reduce:
-        return tf.math.reduce_sum(abs(hot_map), axis=[1,2,3,4])
+        return tf.math.reduce_sum(abs(hot_map)).numpy()
     else:
         return hot_map
 
