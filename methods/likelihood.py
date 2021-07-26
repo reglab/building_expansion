@@ -182,8 +182,8 @@ def fit_observation(model, null=True, num_steps=1000,
     post = tf.math.maximum(pre, post)
     
     if return_model:
-        return losses.numpy(), pre, post, t.numpy()    else:
-        return loss
+        return losses.numpy(), pre, post, t.numpy()
+    return loss
 
 
 def change_ts(model, return_model=False, seed=1234, **kwargs):
