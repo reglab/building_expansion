@@ -1,5 +1,5 @@
 # Detecting Building Expansion in high cadence imagery 
-Likelihood-based expansion detection for satellite imagery
+**Likelihood-based expansion detection for satellite imagery**
 
 This repository contains the code for the paper _Enhancing Environmental Enforcement with Near
 Real-Time Monitoring: Likelihood-Based Detection of
@@ -26,6 +26,21 @@ The repo is organized as follows:
 - `models` directory 
 	- code to load UNet 
  
+The UNet checkpoint, data, and labels may be found on [Google Drive](https://drive.google.com/file/d/1PdoU9Q4-aw2ZCDsUqGyVsVQqXU5PO9mN/view?usp=sharing).  
 
-
+### Attribution 
+If using this repo, please cite 
+```
+@article{Chugg2021enhancing,
+title = {Enhancing environmental enforcement with near real-time monitoring: Likelihood-based detection of structural expansion of intensive livestock farms},
+journal = {International Journal of Applied Earth Observation and Geoinformation},
+volume = {103},
+pages = {102463},
+year = {2021},
+issn = {0303-2434},
+doi = {https://doi.org/10.1016/j.jag.2021.102463},
+url = {https://www.sciencedirect.com/science/article/pii/S0303243421001707},
+author = {Ben Chugg and Brandon Anderson and Seiji Eicher and Sandy Lee and Daniel E. Ho}
+}
+```
  
