@@ -1,9 +1,9 @@
 # Detecting Building Expansion in high cadence imagery 
 **Likelihood-based expansion detection for satellite imagery**
 
-This repository contains the code for the paper _Enhancing Environmental Enforcement with Near
+This repository contains the code for the paper [Enhancing Environmental Enforcement with Near
 Real-Time Monitoring: Likelihood-Based Detection of
-Structural Expansion of Intensive Livestock Farms_ in the _Journal of Applied Earth Observation 
+Structural Expansion of Intensive Livestock Farms](https://arxiv.org/pdf/2105.14159.pdf) in the _Journal of Applied Earth Observation 
 and Geoinformation_. 
 
 In addition to the code to run the proposed maximum-likelihood model, we also provide the code for 
@@ -26,7 +26,7 @@ The repo is organized as follows:
 - `models` directory 
 	- code to load UNet 
  
-The UNet checkpoint, data, and labels may be found on [Google Drive](https://drive.google.com/file/d/1PdoU9Q4-aw2ZCDsUqGyVsVQqXU5PO9mN/view?usp=sharing).  
+The UNet checkpoint, data, and labels may be found on [Google Drive](https://drive.google.com/drive/folders/14WelycgWtXBuW41__bMp8ooIl6jzuMDY?usp=sharing).  
 
 ### Attribution 
 If using this repo, please cite 
