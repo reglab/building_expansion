@@ -26,7 +26,19 @@ The repo is organized as follows:
 - `models` directory 
 	- code to load UNet 
  
+## Data 
+
 The UNet checkpoint, data, and labels may be found on [Google Drive](https://drive.google.com/drive/folders/14WelycgWtXBuW41__bMp8ooIl6jzuMDY?usp=sharing).  
+
+As per our Planet license, we cannot share the geoinformation of the image files. Therefore, we've stored each image as an array of size (200,200,4). The four bands are red, green, blue, and near-infrared, in that order. You can plot an image array `arr` in rgb as 
+ 
+```
+import matplotlib.pyplot as plt 
+plt.imshow(arr[:,:,:3])
+```
+
+The images for each location are stored as a pickle file, e.g.,`loc_0038.p`. There should be 1436 pickle files.Each file is a dictionary whose keys are dates (e.g., `20190829` for Aug 29, 2019). The value for each key is the (200,200,4) dimensional image array. If there were multiple images per date, then we add the suffix -2, -3, etc, e.g., `20190829-2`.  
+
 
 ### Attribution 
 If using this repo, please cite 
