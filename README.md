@@ -28,7 +28,7 @@ The repo is organized as follows:
  
 ## Data 
 
-The UNet checkpoint, data, and labels may be found on [Google Drive](https://drive.google.com/drive/folders/14WelycgWtXBuW41__bMp8ooIl6jzuMDY?usp=sharing).  
+The UNet checkpoint, data, and labels may be found on [Dropbox](https://www.dropbox.com/sh/20p0ptzz2dqj9ch/AAD4dK7TK4AGv95R1e0e_YXwa?dl=0).  
 
 As per our Planet license, we cannot share the geoinformation of the image files. Therefore, we've stored each image as an array of size (200,200,4). The four bands are red, green, blue, and near-infrared, in that order. You can plot an image array `arr` in rgb as 
  
